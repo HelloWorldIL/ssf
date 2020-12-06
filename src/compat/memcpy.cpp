@@ -1,6 +1,6 @@
-#if defined(__GNUC__) && \
-    (__GNUC__ >= 5 || (__GNUC__ == 4  &&  __GNUC_MINOR__ >= 7)) && \
-    defined(__LP64__) && (__LP64__ >= 1) && defined(__x86_64__)
+// #if defined(__GNUC__) && \
+//     (__GNUC__ >= 5 || (__GNUC__ == 4  &&  __GNUC_MINOR__ >= 7)) && \
+//     defined(__LP64__) && (__LP64__ >= 1) && defined(__x86_64__)
 
 #include <string.h>
 
@@ -13,4 +13,4 @@ extern "C" {
     return memcpy(dest, src, n);
   }
 }
-#endif  // GCC >= 4.7 and 64 bits
+// #endif  // GCC >= 4.7 and 64 bits
