@@ -32,7 +32,7 @@ class Session : public ssf::BaseSession {
   using Fiber = typename boost::asio::fiber::stream_fiber<
       typename Demux::socket_type>::socket;
   using StreamHandle = boost::asio::windows::stream_handle;
-  using ShellServer = typename Server<Demux>;
+  using ShellServer = Server<Demux>;
 
  public:
   Session(std::weak_ptr<ShellServer> server, Fiber client,
