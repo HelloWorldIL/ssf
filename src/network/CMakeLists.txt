@@ -207,7 +207,7 @@ endif()
 
 if (WIN32)
   # windows impl
-  list(APPEND PLATFORM_LIBS Secur32.lib)
+  list(APPEND PLATFORM_LIBS secur32.lib)
   list(APPEND SSF_NETWORK_FILES
     # layer/proxy
     ssf/layer/proxy/windows/sspi_auth_impl.cpp
